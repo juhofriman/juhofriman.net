@@ -9,7 +9,7 @@ export class DeploymentStack extends cdk.Stack {
       userName: 'github-cicd-for-site',
       managedPolicies: [
         iam.ManagedPolicy.fromAwsManagedPolicyName('AmazonRoute53FullAccess'),
-        iam.ManagedPolicy.fromAwsManagedPolicyName('AmazonCloudfrontFullAccess'),
+        iam.ManagedPolicy.fromAwsManagedPolicyName('CloudFrontFullAccess'),
         iam.ManagedPolicy.fromAwsManagedPolicyName('AmazonS3FullAccess')
       ]
     });
