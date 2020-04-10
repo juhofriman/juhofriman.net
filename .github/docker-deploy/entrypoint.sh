@@ -5,7 +5,7 @@ set -e
 export AWS_REGION=eu-north-1
 
 apk add python py-pip
-pip install awscli --upgrade --user
+pip install awscli
 
 yarn install
 
