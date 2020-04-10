@@ -17,7 +17,7 @@ cd ..
 
 cd site
 
-aws s3 cp index.html s3://juhofriman-dot-net-bucket
+aws s3 cp index.html s3://personal-site-assets
 
 time=$(date)
 echo "::set-output name=time::$time"
