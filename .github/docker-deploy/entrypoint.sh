@@ -1,5 +1,6 @@
 #!/bin/sh -l
 
-echo "Hello World"
+yarn deps
+
 time=$(date)
 echo "::set-output name=time::$time"
