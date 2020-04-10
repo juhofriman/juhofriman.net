@@ -4,7 +4,6 @@ set -e
 
 apk add python py-pip
 pip install awscli --upgrade --user
-mv /root/.local/bin/* /usr/local/bin
 
 yarn install
 
