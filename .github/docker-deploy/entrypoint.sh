@@ -9,7 +9,7 @@ yarn install
 
 cd cdk
 
-yarn cdk deploy --require-approval never
+yarn cdk deploy --require-approval never site-stack
 
 cd ..
 

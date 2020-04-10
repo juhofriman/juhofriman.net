@@ -10,7 +10,7 @@ export class SiteStack extends cdk.Stack {
   constructor(scope: cdk.Construct, id: string, props?: cdk.StackProps) {
     super(scope, id, props);
 
-   const originAccessIdentity = new cloudfront.OriginAccessIdentity(this, 'site-origin-access-identity');
+    const originAccessIdentity = new cloudfront.OriginAccessIdentity(this, 'site-origin-access-identity');
 
     const siteBucket = new s3.Bucket(this, 'juhofriman-dot-net-bucket', {
       bucketName: `juhofriman-dot-net-bucket`,
@@ -49,8 +49,8 @@ export class SiteStack extends cdk.Stack {
 
     // Route53 DNS record
 
-    const hostedZone = HostedZone.fromHostedZoneAttributes(scope, id, {
-      hostedZoneId: '',
+    const hostedZone = HostedZone.fromHostedZoneAttributes(this, 'hosted-zone-lookup', {
+      hostedZoneId: 'Z2FO45Z4SCBA4N',
       zoneName: 'juhofriman.net'
     })
 
