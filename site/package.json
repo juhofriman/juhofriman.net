@@ -1,0 +1,19 @@
+{
+  "name": "juhofriman.net-site",
+  "version": "0.0.1",
+  "description": "Just a static site",
+  "main": "index.js",
+  "repository": "https://github.com/juhofriman/juhofriman.net",
+  "author": "Juho Friman <juho.t.friman@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "serve": "static-server ."
+  },
+  "dependencies": {
+    "mini.css": "^3.0.1"
+  },
+  "devDependencies": {
+    "static-server": "^2.2.1"
+  }
+}

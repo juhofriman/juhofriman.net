@@ -1,0 +1,23 @@
+{
+  "name": "juhofriman.net",
+  "version": "0.0.1",
+  "description": "juhofriman.net package",
+  "main": "index.js",
+  "repository": "https://github.com/juhofriman/juhofriman.net",
+  "author": "Juho Friman <juho.t.friman@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "workspaces": {
+    "packages": [
+      "cdk",
+      "site"
+    ],
+    "nohoist": [
+      "**/*"
+    ]
+  },
+  "scripts": {
+    "deps": "yarn workspaces run install",
+    "run-site": "cd site && yarn serve"
+  }
+}
