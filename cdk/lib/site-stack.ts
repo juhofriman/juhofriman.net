@@ -38,7 +38,7 @@ export class SiteStack extends cdk.Stack {
         }
       ],
       aliasConfiguration: {
-        acmCertRef: 'arn:aws:acm:eu-north-1:634214176572:certificate/52f0d023-fd70-43c6-afb9-dc0ab3de0401',
+        acmCertRef: 'arn:aws:acm:eu-west-1:634214176572:certificate/6108870a-bfac-4e78-9d1a-274b39b87bb6',
         names: [
           'juhofriman.net'
         ]

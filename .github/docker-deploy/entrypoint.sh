@@ -2,7 +2,7 @@
 
 set -e
 
-export AWS_REGION=eu-north-1
+export AWS_REGION=eu-west-1
 
 apk add python py-pip
 pip install awscli --upgrade --user
