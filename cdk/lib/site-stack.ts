@@ -13,7 +13,7 @@ export class SiteStack extends cdk.Stack {
     const originAccessIdentity = new cloudfront.OriginAccessIdentity(this, 'site-origin-access-identity');
 
     const siteBucket = new s3.Bucket(this, 'juhofriman-dot-net-bucket', {
-      bucketName: `juhofriman-dot-net-bucket`,
+      bucketName: `personal-site-assets`,
       removalPolicy: RemovalPolicy.DESTROY
     });
 
@@ -38,7 +38,7 @@ export class SiteStack extends cdk.Stack {
         }
       ],
       aliasConfiguration: {
-        acmCertRef: 'arn:aws:acm:eu-west-1:634214176572:certificate/6108870a-bfac-4e78-9d1a-274b39b87bb6',
+        acmCertRef: 'arn:aws:acm:us-east-1:634214176572:certificate/d1b797ca-e079-46dc-a4e0-27896d396dbc',
         names: [
           'juhofriman.net'
         ]
