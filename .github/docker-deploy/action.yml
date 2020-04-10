@@ -1,0 +1,5 @@
+name: 'Deploy Site'
+description: 'Deploys this amazing site to AWS'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
