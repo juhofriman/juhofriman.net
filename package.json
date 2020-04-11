@@ -18,6 +18,8 @@
   },
   "scripts": {
     "deps": "yarn workspaces run install",
-    "run-site": "cd site && yarn serve"
+    "run-site": "cd site && yarn serve",
+    "update-deploy-user": "cd cdk && yarn cdk deploy deployment-stack",
+    "deploy-site": "cd cdk && yarn cdk deploy site-stack"
   }
 }

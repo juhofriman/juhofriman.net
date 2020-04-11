@@ -6,33 +6,45 @@
     <script src="https://kit.fontawesome.com/d1f188b917.js" crossorigin="anonymous"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>The Amazing juhofriman.net</title>
+    <title>juhofriman.net</title>
     <style>
         .border {
             border: 1px solid black;
         }
         h1, h2 {
             border-bottom: 1px solid #cecece;
-            color: #888;
+            color: #777;
+        }
+        h1 {
+            font-size:200%;
+        }
+        h2 {
+            font-size: 120%;
+            margin-top:1em;
         }
         .right {
             float: right;
         }
         .gravatar {
             margin-right: 8px;
+            margin-left: 1em;
         }
         p {
             font-family: 'Nunito', sans-serif;
+            color: #999;
         }
         .icon {
             font-size: 2em;
             color: #888;
         }
+        .icon:hover {
+            color: #ccc;
+        }
         a {
-            color: inherit;
+            color: #444;
         }
         a:visited {
-            color: inherit;
+            color: #666;
         }
     
     </style>
@@ -49,18 +61,34 @@
                 <img class="right gravatar" src="https://gravatar.com/avatar/08441148498196c219300f1726632923"/>
                 <p>This is my uncompromised oldschool personal site.</p>
                 <p>I do software and run it in the cloud.</p>
-                <h2>Social Media Accounts</h2>
+                <h2>Public Accounts</h2>
                 <p>
                     <a href="https://github.com/juhofriman"><i class="icon fab fa-github"></i></a>
                     <a href="https://www.linkedin.com/in/juho-friman-44302040/"><i class="icon fab fa-linkedin"></i></a>
                     <a href="https://twitter.com/commafakir"><i class="icon fab fa-twitter"></i></a>
+                </p>
+                <h2>Contact</h2>
+                <p>Contact me via LinkedIn or Twitter.</p>
+                <h2>About this Site</h2>
+                <p>
+                    This site is just static HTML served from <a href="https://aws.amazon.com/s3/">Amazon S3 Bucket</a> via
+                    <a href="https://aws.amazon.com/cloudfront/">CloudFront distribution</a> using 
+                    <a href="https://aws.amazon.com/certificate-manager/">AWS Certificate Manager</a>
+                    for SSL certificates and <a href="https://aws.amazon.com/route53/">Route53</a> for DNS.
+                </p>
+                <p>
+                    The site is deployed with <a href="https://github.com/features/actions">GitHub actions</a> 
+                    using <a href="https://aws.amazon.com/cdk/">AWS Cloud Development Kit</a> (CDK).
+                </p>
+                <p>
+                    The code is in this <a href="https://github.com/juhofriman/juhofriman.net">GitHub repository</a>.
                 </p>
             </div>
             <div class="col-sm-1 col-md-2 col-lg-3">
                 &nbsp;
             </div>
           </div>
-    </div>
+    </div>    
 </body>
 
 </html>
